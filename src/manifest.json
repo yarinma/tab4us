@@ -1,0 +1,16 @@
+{
+  "name": "tab4us",
+  "version": "1.0",
+  "description": "Add facebook events to your google calendar",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab"]
+}
