@@ -8,7 +8,7 @@ function main() {
     function (event) {
       let easyVerLink = document.querySelector("#eLink").href;
       let easyVerTon = getAllUrlParams(easyVerLink).ton;
-      let step = parseInt(easyVerTon) * 2
+      let step = parseFloat(easyVerTon) * 2
       if (isOnEasy) {
         step = step * -1
         document.querySelector("#eLink").innerHTML = easyVerButtonHtml
