@@ -1,2 +1,5 @@
-# A Chrome Extension for Tab4U
-This chrome extension will open the restricted functions in Tab4U for everyone for free.
+
+# &#x202b;תוסף לכרום שפותח את הגרסה הקלה באתר Tab4u
+&#x202b;באתר Tab4u לא ניתן לצפות בגרסה הקלה של האקורדים לשיר בלי לשלם עבור חשבון פרימיום.
+
+&#x202b;התוסף שלנו פותח את האפשרות לצפות בגרסה הקלה ללא תשלום או הרשמה. ברגע שמתקינים את התוסף ניתן ללחוץ על כפתור הגרסה הקלה כרגיל והוא פשוט יעבוד.
