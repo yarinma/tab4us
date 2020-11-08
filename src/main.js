@@ -1,19 +1,21 @@
 function main() {
 
   let isOnEasy = false
-  let easyVerButtonHtml = document.querySelector("#eLink").innerHTML
+  let easyVerbutton = document.querySelector("#eLink") ? document.querySelector("#eLink") : Array.from(document.querySelectorAll('a.pannelB2.rToAddp')).pop();;
+  let easyVerButtonHtml = easyVerbutton.innerHTML;
+  easyVerbutton.removeAttribute("onclick");
 
-  document.querySelector("#eLink").addEventListener(
+  easyVerbutton.addEventListener(
     "click",
     function (event) {
-      let easyVerLink = document.querySelector("#eLink").href;
+      let easyVerLink = easyVerbutton.href;
       let easyVerTon = getAllUrlParams(easyVerLink).ton;
       let step = parseFloat(easyVerTon) * 2
       if (isOnEasy) {
         step = step * -1
-        document.querySelector("#eLink").innerHTML = easyVerButtonHtml
+        easyVerbutton.innerHTML = easyVerButtonHtml
       } else {
-        document.querySelector("#eLink").innerText = "גרסה קלה - חזרה למקורית"
+        easyVerbutton.innerText = "גרסה קלה - חזרה למקורית"
       }
       
       let chordElements = [...document.querySelectorAll("td.chords span")];
@@ -27,9 +29,6 @@ function main() {
         element.innerText = transposed;
       }
       event.preventDefault();
-      document
-        .querySelector("#loading")
-        .setAttribute("style", "display: hide;");
       isOnEasy = !isOnEasy
     },
     false
