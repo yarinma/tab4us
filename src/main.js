@@ -1,7 +1,7 @@
 function main() {
   let isOnEasy = false;
-  let easyVerbutton = document.querySelector("#eLink")
-    ? document.querySelector("#eLink")
+  let easyVerbutton = document.querySelector("#eLinkZ")
+    ? document.querySelector("#eLinkZ")
     : Array.from(document.querySelectorAll("a.pannelB2.rToAddp")).pop();
   let easyVerButtonHtml = easyVerbutton.innerHTML;
   easyVerbutton.removeAttribute("onclick");
